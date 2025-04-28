@@ -1,0 +1,407 @@
+body{
+    margin: 0px;    
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    overflow: hidden;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+    background-color: black;
+}
+
+.sidebar{
+    background-color:  black;
+    width: 300px;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+}
+
+.main-content{
+    background-color: #212121;
+    flex: 1;
+    overflow: auto;
+    border-radius: 1rem;
+    padding: 0px 1rem;
+}
+
+.music_player{
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 72px;
+}
+
+.nav{
+    background-color: #212121;
+    /* margin-top: px; */
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    color: white;
+}
+.nav-option {
+    line-height: 35px;
+    right: 100px;
+    padding: 8px 18px;
+    opacity: 0.7;
+}
+
+.nav-option a{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding-left: 1rem;
+}
+
+.nav-option i{
+    font-size: 1.25rem;
+}
+
+.nav-option:hover{
+    opacity: 1;
+}
+
+.library{
+    height: 100%;
+    background-color: #212121;
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+    padding: 8px 18px;
+}
+
+.library-options{
+    display: flex;    
+}
+
+.library-options img{
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons {
+    display: flex;
+}
+
+.icons :nth-child(2){
+    margin-left: 20px;
+}
+.icons i{
+    display: flex;
+    color: white;
+    opacity: 0.7;
+}
+
+.icons i:hover{
+    opacity:1;
+}
+
+.box{
+    height: 7rem;
+    background-color: #121212;
+    border-radius: 0.75rem;
+    color: white;
+    padding-top: 0.2rem ;
+    padding-left: 1rem;
+    margin-top: 15px;
+}
+
+
+#box1{
+    height: 130px;
+    padding-bottom: 0.4rem;
+}
+#box2{
+    height: 175px;
+}
+
+
+#p1{
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 25px;
+}
+#p2{
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+    opacity: 0.7;
+}
+
+#b1{
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    background-color: white;
+    font-weight: 700;
+    padding: 0.3rem;
+    height: 2rem;
+    width: 120px;
+}
+
+
+.sticky-nav{
+    background-color: #121212;
+    position: sticky;
+    top: 0;
+    display: flex;
+    position: top;
+    justify-content: space-between;
+    padding: 1rem ;
+    align-items: center;
+    z-index: 1;
+    margin: 0px -16px;
+    border-radius: 10px;
+}
+
+.b2{
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    font-weight: 700;
+    padding: 0.6rem;
+    height: 2rem;
+    margin-right: 15px;
+}
+
+
+
+.b3{
+    border: none;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    font-weight: 500;
+    padding: 0.6rem;
+    padding-bottom: 0.5rem;
+    height: 2rem;
+    margin-right: 15px;
+}
+
+.fa-solid fa-user-large{
+    font-weight: 900;
+}
+
+.sticky-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.sticky-options i{
+    color: white;
+}
+
+@media (max-width:1000px){
+    .hide{
+        display: none;
+    }
+}
+
+.cards-container{
+   display: flex;
+   flex-wrap: wrap;
+    padding: 15px;
+}
+
+.card{
+    background-color: #121212;
+    width:150px ;
+    height: 200px;
+    padding: 15px;
+    padding-bottom: 50px;
+    border-radius: 9px;
+    margin: 5px;
+    transition: transform 0.6s ease; 
+    transition:box-shadow 0.3s ease;
+}
+
+.card:hover{
+    padding:25px ;
+    /* padding-bottom: 60px; */
+    transform: scale(1.04);
+    box-shadow: 0px 4px 20px rgba(73, 73, 73, 0.5);
+    padding-bottom: 50px;
+
+}
+
+ h2{
+    color: white;
+    padding: 0px 15px;
+ }
+
+.card-img{
+    width:100%;
+}
+
+.card-title{
+    color: white;
+    font-weight: 600;
+}
+
+.card-info{
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+.footer{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line{
+    width: 90%;
+    height: 50%;
+    border-top: solid 2px white;
+    opacity: 0.5;
+}
+
+.music_player{
+    border-top: solid 5px #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.album{
+    width: 25%;
+    /* background-color: pink; */
+    height: 100%;
+}
+
+.player-control{
+    width: 50%;
+    height: 100%;
+}
+
+.controls{
+    width: 25%;
+    /* background-color: crimson; */
+    height: 100%;
+}
+
+.nav-cont{
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-icons{
+    height: 1rem;
+    margin: 15px;
+    opacity: 0.6;
+}
+.play-icons:hover{
+    opacity: 1;
+}
+
+.play-back-bar{ 
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar{
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+.progress-bar::-webkit-slider-thumb{  
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -5.5px;
+}
+
+
+.album{
+    display: flex;
+}
+
+.img img{
+    height: 3rem;
+    width: 3rem;
+    padding: 0.7rem;
+    object-fit: cover;
+    margin-left: 15px;
+}
+
+.album-info{
+    padding: 0.7rem;
+}
+
+.song{
+    font-size: 20px;
+}
+.singer{
+    font-size: 10px;
+}
+
+.album-icons{
+    padding: 0.7rem;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.album-icons i{
+    margin: 3px;
+}
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.controls i{
+    margin: 10px;
+}
+
+.volume{
+    appearance: none;
+    width: 25%;
+    cursor: pointer;
+}
+
+.volume::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+
+.volume::-webkit-slider-thumb{
+    appearance: none;
+    height: 0.7rem;
+    width: 0.7rem;
+    background-color: blue;
+    border-radius: 50%;
+    margin-top: -3.1px;
+}
+
